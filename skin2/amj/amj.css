@@ -1,0 +1,46 @@
+
+:root{
+	--main-color: #55A255;
+	--deep-color: #375E37;
+    --light-color1: #BFDEBF;
+    --light-color2: #D6E2D1;
+	--bg-color: #F8F7F1;
+    --gray100-color: #F5F5F5;
+    --gray300-color: #9a9a9a;
+    --gray600-color: #6a6a6a;
+    --gray900-color: #3a3a3a;
+	--font-special : 'Diphylleia'
+}
+
+body .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, var(--main-color));
+}
+
+.main-color{
+	color : var(--main-color);
+}
+.main-bg-color{
+	background-color: var(--main-color) !important;
+}
+
+.contentbox{
+	padding: 5px clamp(15px, 5vw, 80px) !important;
+}
+
+.footer_contentbox{
+	padding: 60px clamp(15px, 5vw, 80px) !important;
+}
+
+.icon.icoClose:before, 
+.icon.icoClose:after {
+    background: #fff !important; 
+}
+
+.main_product_category .main_product_tab li .button:after{
+	background-color: var(--main-color);
+}
+
+.mainfont{
+	font-family: var(--font-special) !important;
+}

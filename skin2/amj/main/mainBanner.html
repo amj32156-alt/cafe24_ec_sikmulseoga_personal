@@ -3,10 +3,10 @@
     	<div webpb-banner class="swiper-slide dim" style="background-image:url({#pc_thumb_url})">
         <div class="hero-container d-flex flex-column justify-content-center mx-auto w-100 h-100">
         	  <div href="{#link}" class="d-md-none h-100 d-flex flex-column justify-content-center align-items-center text-center dim" target="{#link_target}" style="background-image:url({#m_thumb_url})">
-                    <div class="textcontent position-relative ">
+                    <div class="textcontent position-relative">
                       {#html}
                      </div>
-                     <span class="d-block bg-white bar px-1 py-5"></span>                     
+                     <span class="hero_line d-block bg-white bar px-1 py-4"></span>                     
             		    <a class="hero-more font-white mainfont" href="{#link}" target="{#link_target}">MORE</a>
              </div>
             <div href="{#link}" class="d-none d-md-flex justify-content-between align-items-end mt-auto pb-5" target="{#link_target}">
@@ -20,10 +20,10 @@
     	<div webpb-banner class="swiper-slide dim" style="background-image:url({#pc_thumb_url})">
         <div class="hero-container d-flex flex-column justify-content-center mx-auto w-100 h-100">
         	  <div href="{#link}" class="d-md-none h-100 d-flex flex-column justify-content-center align-items-center text-center dim" target="{#link_target}" style="background-image:url({#m_thumb_url})">
-                    <div class="textcontent  position-relative ">
+                    <div class="textcontent  position-relative">
                       {#html}
                      </div>
-                     <span class="d-block bg-white bar px-1 py-5"></span>                     
+                     <span class="d-block bg-white bar px-1 py-4"></span>                     
             		    <a class="hero-more font-white mainfont" href="{#link}" target="{#link_target}">MORE</a>
              </div>
             <div href="{#link}" class="d-none d-md-flex justify-content-between align-items-end mt-auto pb-5" target="{#link_target}">
@@ -43,15 +43,22 @@
     #heroSection .swiper-slide .textcontent {
       z-index: 10;
     }
-    #heroSection .swiper-slide .textcontent  .mainfont{ opacity: 0; transform: translateY(-200%); transition: 0.5s; transition-delay: 1s;}
-    #heroSection .swiper-slide .textcontent  p.hero-sub-f{ opacity: 0; transition: 0.5s; transition-delay: 1.5s; transform: translateY(200%);}
+  
+    #heroSection .swiper-slide .textcontent  .mainfont{ opacity: 0; transform: translateY(-150%); transition: 0.5s; transition-delay: 0.3s;}
+    #heroSection .swiper-slide .textcontent  p.hero-sub-f{ opacity: 0; transition: 0.5s; transition-delay: 0.6s; transform: translateY(150%);}
+    #heroSection .swiper-slide a.hero-more{ opacity: 0; transition: 0.5s; transition-delay: 0.7s; transform: translateY(150%);}
     
 
     #heroSection .swiper-slide.swiper-slide-active .textcontent  .mainfont{ 
-           transform: translateY(0);
-           opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
     }
-    #heroSection .swiper-slide.swiper-slide-active .textcontent  p.hero-sub-f{ transform: translateY(0);  opacity: 1;}
+    #heroSection .swiper-slide.swiper-slide-active .textcontent  p.hero-sub-f{ 
+      transform: translateY(0);
+      opacity: 1;}
+      #heroSection .swiper-slide.swiper-slide-active a.hero-more{ 
+      transform: translateY(0);
+      opacity: 1;}
 
 
 
@@ -75,7 +82,7 @@
 
     
     
-/* PC 딤 처리 */
+/* 딤 처리 */
 #heroSection .swiper-slide {
     position: relative;
 }
@@ -179,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
       // 3. 자동 재생 (설정 시)
        autoplay: {
-         delay: 8000,
+         delay: 5000,
       },
         
         
