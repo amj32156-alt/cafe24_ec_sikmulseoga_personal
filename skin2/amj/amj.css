@@ -44,3 +44,54 @@ body .swiper-pagination-bullet-active {
 .mainfont{
 	font-family: var(--font-special) !important;
 }
+
+body#amj  .main_ft_banner{
+    background:url(https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/web/upload/qurationbg.jpg);
+    background-size:cover;
+    aspect-ratio : 1920 / 654;
+    max-width:none;
+    width:auto;
+}
+
+#news .boardList .xans-board-list-1 > div{
+  float:right;
+  width : calc( 50% - 12px );
+  aspect-ratio : 603 / 265;
+  background-size:cover !important;
+}
+
+#news .boardList .xans-board-list-1 > div:nth-child(1){
+    float :left;
+    background:url(https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/web/upload/news_1.jpg);   
+    aspect-ratio : 603 / 549;    
+}
+#news .boardList .xans-board-list-1 > div:nth-child(2){
+    
+    background:url(https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/web/upload/news_2.jpg); 
+}
+#news .boardList .xans-board-list-1 > div:nth-child(3){
+    background:url(https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/web/upload/news_3.jpg); 
+    margin-top: 20px;
+}
+
+#news{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+#amj #cta div.mainfont{
+    font-family: 44px;
+}
+
+@media (max-width:991px){
+   body#amj #news .boardList .xans-board-list-1 > div {
+        float: none;
+        width: auto;
+        margin-top: clamp(8px, 3vw, 20px);
+    }
+    body#amj #news .boardList .xans-board-list-1 > div:nth-child(1) {
+        aspect-ratio: 603 / 265;
+        background-position: center 18%;
+    }
+
+}
