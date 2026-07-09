@@ -69,7 +69,7 @@
 </section>
 
 <!-- NEW -->
-<section class="section main_product_list" data-ez-module="product-list/1" data-ez-layout="grid4" data-ez="contents-1jq66zr-1">
+<section id="new" class="section main_product_list" data-ez-module="product-list/1" data-ez-layout="grid4" data-ez="contents-1jq66zr-1">
 	<ez-prop data-version="1.0.0" type="layout">
 		<ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
 			<ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
@@ -117,13 +117,13 @@
 </section>
 
 <!-- 식물서가의 기록들 -->
-<section class='section main_title mb-5'>
-    <div class="main_title ez-align-center d-flex align-items-end mb-3 position-relative" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
+<section id="review" class='section main_title mb-5'>
+    <div class="main_title ez-align-center d-flex align-items-end mb-4 position-relative" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
 		<div class="d-flex flex-column justify-content-center">
 			<p class="main_title_txt01 text-nowrap" data-ez-role="title">식물서가의 기록들</p>
 			<p class="main_title_txt02 text-nowrap" data-ez-role="subtitle">식물서가 이용자들의 후기</p>
 		</div>
-		<p class="more position-absolute end-0 bottom-0 m-0 w-auto"><a href="/board/상품-사용후기/4/" class="btnNormal border-0 p-0 h-auto">더보기</a></p>
+		<p class="more position-absolute end-0 bottom-0 m-0 w-auto"><a href="/board/상품-사용후기/4/" class="btnNormal border-0 p-0 h-auto fw500">더보기</a></p>
     </div><!-- //main_title -->
     <div module="board_listpackage_4">
         <div class="ec-base-table  border-0">
@@ -135,15 +135,17 @@
                         $subject_cut = 25
                         $main_list_reply_view = no
                     -->
-                    <li class="{$block_target_class} d-flex flex-column gap-3 col-3" {$block_data_attr}>
-                        <img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"  />                     
-                        <strong class="title text-start"><a href="{$link_board_detail}" class="{$block_target_class}" {$block_data_attr}>{$subject}</a></strong>
-                        <p class=" text-start">{$content}</p>
+                    <li class="{$block_target_class} d-flex flex-column col-3" {$block_data_attr}>
+                        <img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
+						<div class="text-start text-warning mb-2" style="font-size: 1rem;">★★★★★</div>                   
+                        <strong class="title text-start mb-3"><a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>{$subject}</a></strong>
+                        <div class="des text-start">{$content}</div>
                     </li>
-                   <li class="{$block_target_class} d-flex flex-column gap-3 col-3" {$block_data_attr}>
-                        <img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"  /> 
-                        <strong class="title text-start"><a href="{$link_board_detail}" class="{$block_target_class}" {$block_data_attr}>{$subject}</a></strong>
-                        <p class="text-start">{$content}</p>
+                   <li class="{$block_target_class} d-flex flex-column col-3" {$block_data_attr}>
+                        <img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
+						<div class="text-start text-warning mb-2" style="font-size: 1rem;">★★★★★</div>
+                        <strong class="title text-start mb-3"><a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>{$subject}</a></strong>
+                        <div class="des text-start">{$content}</div>
                     </li>
                 </ul>
             </div>
@@ -161,8 +163,197 @@
 	<div class="main_video_box"><iframe data-ez-role="video" id="ytplayer" type="text/html" src="https://m-img.cafe24.com/images/ec/sde/video/luminous_1366x720.mp4" frameborder="0" allowfullscreen data-ez-rawsrc="https://m-img.cafe24.com/images/ec/sde/video/luminous_1366x720.mp4"></iframe></div>
 </section>
 
+<!-- event banner -->
+<section module="Board_ListPackage_8" id="gallery" class="section" data-ez-role="ez-align" data-ez="contents-09cpfxu-1">
+
+	<div class="boardList">
+		
+		<ul module="board_notice_8" class="notice ">
+			<!--
+				$count = 2
+				$login_page_url = /member/login.html
+				$deny_access_url = /index.html
+			-->
+			<li >
+				<span>{$checkbox}{$notice_icon}</span>
+				<span class="{$category_display|display}">{$category_name}</span>
+				<span class="subject">
+					{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+				</span>
+			</li>
+			<li >
+				<span>{$checkbox}{$notice_icon}</span>
+				<span class="{$category_display|display}">{$category_name}</span>
+				<span class="subject">
+					{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+				</span>
+			</li>
+		</ul>
+			
+		<div class="d-flex gap-md-4 my-5" module="board_list_8">
+			<!--
+				$login_page_url = /member/login.html
+				$deny_access_url = /index.html
+			-->
+			<div class="pb-5">
+				<a href="/board/free/read.html{$param_read}" class='text-white'>
+					<img src="{$img_src}" alt="{$subject}">
+				</a> 
+			</div>
+			<div class="pb-5">
+				<a href="/board/free/read.html{$param_read}" class='text-white'>
+					<img src="{$img_src}" alt="{$subject}">
+				</a> 
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<!-- Sale Item -->
+<section id="sale" class="section main_product_list" data-ez-module="product-list/1" data-ez-layout="grid3" data-ez="contents-1kvruxq-1">
+	<ez-prop data-version="1.0.0" type="layout">
+		<ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
+			<ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
+			<ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
+			<ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
+		</ez-var>
+	</ez-prop>
+
+	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
+		<div class="main_title_txt01" data-ez-role="title">Sale Item</div>
+		<div class="main_title_txt02" data-ez-role="subtitle">특별할인 세일 상품</div>
+	</div><!-- //main_title -->
+
+	<div data-ez-holder="product_listmain">
+		<div module="product_listmain_4" class="ec-base-product">
+			<!--
+				$count = 100
+				$basket_result = /product/add_basket.html
+				$basket_option = /product/basket_option.html
+				$moreview = yes
+				$cache = yes
+			-->
+			<ul class="prdList grid4" data-ez-role="layout ez-discount-tag">
+				<!--@import(/product/list_product.html)-->
+			</ul>
+		</div>
+		<div module="product_listmore_4" class="more">
+			<a href="#none" onclick="{$more_action}" class="btnMore">
+				상품 더보기<div>(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- 식물서가 NEWS -->
+<section module="Board_ListPackage_1" id="news" class="section" data-ez-role="ez-align" data-ez="contents-09cpfxu-1">
+
+	<div module="board_title_1" class="d-flex justify-content-center align-items-end mb-4 position-relative">
+		<div class="d-flex flex-column justify-content-center text-center">
+			<h2>{$board_title} {$board_adult_icon}</h2>
+			<p class="mb-3">{$board_info}</p>
+		</div>
+		<p class="more position-absolute end-0 bottom-0 m-0 w-auto"><a href="/board/식물서가-News/1/" class="btnNormal border-0 p-0 h-auto fw500">더보기</a></p>
+	</div>
+
+		<div class="boardSort">
+			<span module="board_category_1">{$form.board_category}</span>
+			<span module="board_ReplySort_1">{$reply_sort}</span>
+		</div>
+
+		<div class="boardList">
+		
+			<ul module="board_notice_1" class="notice ">
+				<!--
+					$count = 3
+					$login_page_url = /member/login.html
+					$deny_access_url = /index.html
+				-->
+				<li class="new_1" style="{$list_bg_color} {$list_char_color}">
+					<span>{$checkbox}{$notice_icon}</span>
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</li>
+				<li style="{$list_bg_color} {$list_char_color} d-flex">
+					<span>{$checkbox}{$notice_icon}</span>
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</li>
+				<li style="{$list_bg_color} {$list_char_color} d-flex">
+					<span>{$checkbox}{$notice_icon}</span>
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</li>
+			</ul>
+			<ul module="board_fixed_1" class="notice">
+				<!--
+					$count = 3
+					$login_page_url = /member/login.html
+					$deny_access_url = /index.html
+				-->
+				<li style="{$list_bg_color} {$list_char_color} d-flex">
+					<span>{$checkbox}{$notice_icon}</span>
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</li>
+				<li style="{$list_bg_color} {$list_char_color} d-flex">
+					<span>{$checkbox}{$notice_icon}</span>
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</li>
+			</ul>
+			<div module="board_list_1" class="overflow-hidden">
+				<!--
+					$login_page_url = /member/login.html
+					$deny_access_url = /index.html
+				-->
+				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
+					
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</div>
+				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
+					
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</div>
+				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
+					
+					<span class="{$category_display|display}">{$category_name}</span>
+					<span class="subject">
+						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+					</span>
+				</div>
+			</div>
+		</div>
+
+    <div class="boardListEmpty {$empty_display|display}" module="board_empty_1">
+        <p>
+            {$empty_message}
+        </p>
+    </div>
+</section>
+
 <!-- 초보집사 PICK! -->
-<section class="section main_product_category" data-ez-module="product-list-category/2" data-ez-layout="grid5" data-ez="contents-19xgafm-1">
+<section id="pick" class="section main_product_category" data-ez-module="product-list-category/2" data-ez-layout="grid5" data-ez="contents-19xgafm-1">
 	<ez-prop data-version="1.0.0" type="layout">
 		<ez-var data-prop="layout" data-namespace="ez.module.product-list-category.layout" data-type="array">
 			<ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
@@ -278,152 +469,9 @@
 	</div><!-- //content-list -->
 </section>
 
-<!-- 식물서가 NEWS -->
-<section module="Board_ListPackage_1" id="news" class="section" data-ez="contents-09cpfxu-1">
-
-	<div module="board_title_1">
-		<div class="title text-center">
-			<h2>{$board_title} {$board_adult_icon}</h2>
-			<p class="mb-3">{$board_info}</p>
-		</div>
-			
-		</div>
-
-		<div class="boardSort">
-			<span module="board_category_1">{$form.board_category}</span>
-			<span module="board_ReplySort_1">{$reply_sort}</span>
-		</div>
-
-		<div class="boardList">
-		
-			<ul module="board_notice_1" class="notice ">
-				<!--
-					$count = 3
-					$login_page_url = /member/login.html
-					$deny_access_url = /index.html
-				-->
-				<li class="new_1" style="{$list_bg_color} {$list_char_color} ">
-					<span>{$checkbox}{$notice_icon}</span>
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</li>
-				<li style="{$list_bg_color} {$list_char_color} d-flex">
-					<span>{$checkbox}{$notice_icon}</span>
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</li>
-				<li style="{$list_bg_color} {$list_char_color} d-flex">
-					<span>{$checkbox}{$notice_icon}</span>
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</li>
-			</ul>
-			<ul module="board_fixed_1" class="notice">
-				<!--
-					$count = 3
-					$login_page_url = /member/login.html
-					$deny_access_url = /index.html
-				-->
-				<li style="{$list_bg_color} {$list_char_color} d-flex">
-					<span>{$checkbox}{$notice_icon}</span>
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</li>
-				<li style="{$list_bg_color} {$list_char_color} d-flex">
-					<span>{$checkbox}{$notice_icon}</span>
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</li>
-			</ul>
-			<div module="board_list_1" class="overflow-hidden">
-				<!--
-					$login_page_url = /member/login.html
-					$deny_access_url = /index.html
-				-->
-				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
-					
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</div>
-				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
-					
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</div>
-				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
-					
-					<span class="{$category_display|display}">{$category_name}</span>
-					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-					</span>
-				</div>
-			</div>
-		</div>
-
-    <div class="boardListEmpty {$empty_display|display}" module="board_empty_1">
-        <p>
-            {$empty_message}
-        </p>
-    </div>
-</section>
-
-<!-- Sale Item -->
-<!--@import(/smart-banner/shop1/smart-banner-admin-RES00004.html)-->
-<section class="section main_product_list" data-ez-module="product-list/1" data-ez-layout="grid3" data-ez="contents-1kvruxq-1">
-	<ez-prop data-version="1.0.0" type="layout">
-		<ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
-			<ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
-			<ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
-			<ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
-		</ez-var>
-	</ez-prop>
-
-	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
-		<div class="main_title_txt01" data-ez-role="title">Sale Item</div>
-		<div class="main_title_txt02" data-ez-role="subtitle">특별할인 세일 상품</div>
-	</div><!-- //main_title -->
-
-	<div data-ez-holder="product_listmain">
-		<div module="product_listmain_4" class="ec-base-product">
-			<!--
-				$count = 100
-				$basket_result = /product/add_basket.html
-				$basket_option = /product/basket_option.html
-				$moreview = yes
-				$cache = yes
-			-->
-			<ul class="prdList grid4" data-ez-role="layout ez-discount-tag">
-				<!--@import(/product/list_product.html)-->
-			</ul>
-		</div>
-		<div module="product_listmore_4" class="more">
-			<a href="#none" onclick="{$more_action}" class="btnMore">
-				상품 더보기<div>(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)</div>
-			</a>
-		</div>
-	</div>
-</section>
-
 <!-- 하단 CTA Banner -->
 <section id="cta" class="section main_text ez-textsize-medium ez-align-center main_ft_banner" data-ez-module="text/1" data-ez-role="style.background" data-ez-align="center" data-ez-textsize="medium" style="margin-bottom: 0px;" data-ez="contents-1ju1ne7-1"><!-- 메인 텍스트배너 수정하는곳 -->
-	<div class="mainfont text-white mb-4 lh12 fs-1" data-ez-role="title">식물이 낯선 당신을 위해<br>식물서가가 제안하는 다정한 초록</div>
+	<div class="mainfont text-white mb-5 lh12 fs-1" data-ez-role="title">식물이 낯선 당신을 위해<br>식물서가가 제안하는 다정한 초록</div>
 	<div class="text-white" data-ez-role="desc"><p>실패에 대한 걱정은 잠시 내려놓고 식물을 고르는 설렘부터<br>건강하게 키우는 즐거움까지 함께하세요.</p></div>
 	<div class="main_text_link text-white d-none"><a data-ez-role="a" href="#" target="_self">MORE</a></div>
 	<button class="text-white mt-5 border px-4 py-2 d-none"><a>MORE</a></button>

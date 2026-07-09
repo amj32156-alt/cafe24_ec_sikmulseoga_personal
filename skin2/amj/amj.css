@@ -45,12 +45,25 @@ body .swiper-pagination-bullet-active {
 	font-family: var(--font-special) !important;
 }
 
-body#amj  .main_ft_banner{
+body#amj .main_ft_banner{
     background:url(https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/web/upload/qurationbg.jpg);
     background-size:cover;
     aspect-ratio : 1920 / 654;
     max-width:none;
     width:auto;
+}
+
+#header .top_mypage span.EC-Layout-Basket-count{
+    color: #fff;
+    font-size: 12px;
+}
+
+#amj #header.layout3 .inner .top_nav_box .top_mypage a.xans-layout-orderbasketcount .count {
+    top: 24px;
+}
+
+#new,#pick .prdList .sale_box{
+    display: none;
 }
 
 #news .boardList .xans-board-list-1 > div{
@@ -83,6 +96,107 @@ body#amj  .main_ft_banner{
     font-family: 44px;
 }
 
+#amj #review>div.main_title {
+    margin-top: 0px;
+}
+
+@media (max-width:1700px){
+    #amj #header.layout3 .inner .top_nav_box .top_mypage a.xans-layout-orderbasketcount .count {
+    top: 40px;
+    }
+}
+
+#review .main_title p.more a{
+    color: var(--main-color);
+}
+
+#review a.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;         
+    text-overflow: ellipsis;
+    display: block;
+    color: var(--gray900-color);
+}
+
+#amj #review .main_title_txt02{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 15px;
+    color: var(--gray300-color);
+}
+
+#news .xans-board-1 div h2 font{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--gray900-color);
+}
+
+#amj #news .xans-board-1 div>p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 10px;
+    color: var(--gray300-color);
+}
+
+#news .subject a strong{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -3%;
+}
+
+#amj  #news .subject a p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 8px;
+    letter-spacing: -3%;
+}
+
+#news .position-relative p.more a{
+    color: var(--main-color);
+}
+
+
+#amj #review .ec-base-table .row{
+    margin-bottom: 130px;
+}
+
+#amj #review ul li .title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -3%;
+    color: var(--gray900-color);
+}
+
+#amj #review ul li .des p, span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -3%;
+    color: var(--gray600-color);
+}
+
+#amj #cta .mainfont{
+    font-size: 44px !important;
+}
+
+#amj #cta p {
+    font-size: 22px;
+}
+
+#amj #container #contents h2{
+    font-size: 44px !important;
+}
+
+#container #contents p{
+    font-size: 22px;
+}
+
 @media (max-width:991px){
    body#amj #news .boardList .xans-board-list-1 > div {
         float: none;
@@ -91,7 +205,14 @@ body#amj  .main_ft_banner{
     }
     body#amj #news .boardList .xans-board-list-1 > div:nth-child(1) {
         aspect-ratio: 603 / 265;
-        background-position: center 18%;
+        background-position: center 99%;
     }
+}
 
+#amj  .path{
+    display: none !important;
+}
+
+#container #contents .titleArea p{
+    display: none;
 }
