@@ -9,6 +9,7 @@
     --gray300-color: #9a9a9a;
     --gray600-color: #6a6a6a;
     --gray900-color: #3a3a3a;
+    --darkgray-color: #1a1a1a;
 	--font-special : 'Diphylleia'
 }
 
@@ -195,6 +196,70 @@ body#amj .main_ft_banner{
 
 #container #contents p{
     font-size: 22px;
+}
+
+#amj #footer .bt_util ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+}
+
+#footer .inner .bt_info .bt_info_list > div span:nth-child(1){
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+    margin-right: 4px;
+}
+
+#footer .bt_wrap .bt_info_list span:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+}
+
+#footer .bt_wrap .bt_cscenter .bt_txt01 strong{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+}
+
+#footer .bt_wrap .bt_cscenter .bt_txt01 span{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+}
+
+#footer .bt_wrap .bt_cscenter .bt_txt02 strong{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+}
+
+#footer .bt_wrap .bt_cscenter .bt_txt02 span{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+}
+
+#footer .bt_wrap .bt_bank .title_sub strong{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
+}
+
+#footer .bt_wrap .bt_bank .bt_txt02 ul li span{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -3%;
+    color: var(--darkgray-color);
 }
 
 @media (max-width:991px){
