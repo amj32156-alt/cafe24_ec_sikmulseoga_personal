@@ -159,7 +159,9 @@
     }
     
     
-</style><script>
+</style>
+
+<script>
 document.addEventListener('DOMContentLoaded', function () {
   // Swiper 컨테이너가 존재하는지 먼저 확인 (디버그 방지)
   const swiperElement = document.querySelector('#heroSection.swiper');
@@ -201,12 +203,9 @@ document.addEventListener('DOMContentLoaded', function () {
         
         
       // 내비게이션/페이지네이션 (DOM 내에 해당 클래스가 있어야 작동)
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+     
       pagination: {
-        el: '.swiper-pagination',
+        el: '#heroSection .swiper-pagination',
         clickable: true,
       }
     });
@@ -214,58 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.warn('Swiper 컨테이너를 찾을 수 없습니다.');
   }
 });
-</script></div>
-<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-0x94jkb-1"><script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Swiper 컨테이너가 존재하는지 먼저 확인 (디버그 방지)
-  const swiperElement = document.querySelector('#heroSection.swiper');
-  
-  if (swiperElement) {
-    const swiper = new Swiper('#heroSection.swiper', {
-      loop: true,
-      
-      // 실행식 내부 이벤트 세팅
-      on: {
-        init: function () {
-          console.log('Swiper가 DOM 로딩 후 초기화되었습니다.');
-        },
-        slideChange: function () {
-          console.log('현재 슬라이드 인덱스:', this.realIndex);
-        },
-        transitionEnd: function () {
-          console.log('전환 완료');
-        }
-      },
-        
-      // 3. 자동 재생 (설정 시)
-       autoplay: {
-         delay: 5000,
-      },
-        
-        
-        loop: true,
-    // 1. 전환 속도를 1000ms(1초)로 설정 (기본값보다 길게 설정하여 부드러운 느낌 부여)
-    speed: 500, 
-
-    // 2. 부드러운 전환을 위한 easing 설정 (CSS transition-timing-function과 유사)
-    // ease-in-out을 사용하면 시작과 끝이 더 자연스럽습니다.
-    grabCursor: true,
-
-        
-        
-      // 내비게이션/페이지네이션 (DOM 내에 해당 클래스가 있어야 작동)
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      }
-    });
-  } else {
-    console.warn('Swiper 컨테이너를 찾을 수 없습니다.');
-  }
-});
-</script></div>
+</script>
+</div>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-0x94jkb-1"></div>
 <!--#ez="1/4"-->
