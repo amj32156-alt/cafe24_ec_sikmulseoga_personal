@@ -1,0 +1,90 @@
+<style>
+.quation_content_0{
+    background:url(https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/web/upload/qurationbg.jpg);
+    background-size:cover;
+    aspect-ratio : 1920 / 818
+}
+    
+#amj .footer_margin{
+	margin: 0;
+}
+
+.quration_slide_wrapper {
+    overflow: hidden; /* 슬라이드 밖으로 나가는 요소 숨김 */
+    width: 100%;
+}
+
+.quration_slide_wrapper
+{ overflow: hidden; width: clamp(250px, 80vw, 600px);
+    position: relative; 
+}
+
+#step_quration_wrapper{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-step{
+    width: clamp(250px, 80vw, 600px);
+    flex-shrink: 0;
+}
+
+/* 선택 스타일 */
+.answer_btns button{
+    border: 1.3px solid white;
+    background: transparent;
+    color: white;
+    padding: 12px 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.answer_btns button.is-selected{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+}
+
+/* 프로그레스 바 */
+.scroll_bar{
+    width: 100%;
+    height: 5px;
+}
+
+
+/* data-width 값을 CSS 변수로 받아서 사용 */
+.scroll_bar .bg-white {
+    width: var(--progress, 0%); /* 변수가 없으면 0% */
+    transition: width 0.3s ease;
+    height: 5px;
+}
+
+#guide_banner div.text-center div:nth-child(1){
+    margin-bottom: 24px;
+}
+
+.quration_slide_wrapper {
+    align-self: flex-end; /* 부모가 flex일 때, 이 요소만 오른쪽 끝으로 정렬 */
+    margin-right: 300px;   /* 오른쪽 여백 확보 */
+}
+
+#step_quration_wrapper button{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -3%;
+}
+
+#step_quration_wrapper .mainfont{
+    font-size: 30px;
+    letter-spacing: -3%;
+}
+
+#previewinfo button{
+    margin-top: 165px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -3%;
+}
+
+</style>

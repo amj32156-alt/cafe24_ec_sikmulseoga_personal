@@ -1,0 +1,45 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--@import(/amj/page/common_quration.html)-->
+
+<section id="guide_banner">
+    <div class="d-flex flex-column justify-content-center align-items-center text-white p-5 quation_content_0">
+        <div class="text-center">
+            <div class="mainfont text-white lh12 fs-1" data-ez-role="title">식물 관리, 어디서부터 어떻게 시작해야 할지 막막하신가요?</div>
+            <div class="text-white" data-ez-role="desc"><p>식물 입문자를 위한 식물서가의 식물 가이드를 확인해 보세요.</p></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let currentStep = 1;
+const surveyData = {};
+
+// 버튼 클릭 이벤트: 모든 버튼에 자동 할당
+document.querySelectorAll('.answer_btns button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const parent = e.target.closest('.answer_btns');
+        // 같은 그룹 내 모든 버튼에서 클래스 제거
+        parent.querySelectorAll('button').forEach(b => b.classList.remove('is-selected'));
+        // 클릭한 버튼만 추가
+        e.target.classList.add('is-selected');
+        
+        const stepId = e.target.closest('.slide-step').id;
+        surveyData[stepId] = e.target.innerText.trim();
+    });
+});
+
+// 이동 로직은 이전과 동일하게 유지 (5번째 버튼 클릭 시 최종 결과 로직 수행)
+document.querySelector('.btn-next').addEventListener('click', () => {
+    if (currentStep < 5) {
+        currentStep++;
+        document.getElementById('step_quration_wrapper').style.transform = `translateX(-${(currentStep - 1) * 20}%)`;
+        document.querySelector('.scroll_bar .bg-white').style.width = `${(currentStep / 5) * 100}%`;
+    } else {
+        document.body.setAttribute('data-page-id', 'quration_result');
+        document.getElementById('step_quration_wrapper').style.display = 'none';
+        document.getElementById('step-contraller').style.display = 'none';
+        console.log("최종 결과 JSON:", JSON.stringify(surveyData));
+    }
+});
+</script>

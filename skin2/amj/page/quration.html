@@ -1,0 +1,205 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--@import(/amj/page/common_quration.html)-->
+
+
+
+<div class="d-flex flex-column justify-content-center align-items-center text-white p-5 quation_content_0">
+
+    <div id="previewinfo" class="step-container text-center">
+        <h2 class="mainfont fs-1 mb-4">당신의 일상에 스며들 초록을 찾아서</h2>
+        <p class="mb-5">라이프스타일과 공간을 분석해 가장 적합한 반려 식물을 제안합니다.</p>
+        <button class="btn-next text-white mt-5 border px-5 py-3" data-next="1">맞춤 식물 찾기</button>
+    </div>
+
+    <div class="quration_slide_wrapper d-none">
+        <div id="step_quration_wrapper">
+           <section id="step-1" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q1. 식물을 둘 공간은 어디인가요?</h3>
+                <div class="answer_btns">
+                    <button class="is-selected rounded-pill">욕실</button>
+                    <button class="rounded-pill">거실</button>
+                    <button class="rounded-pill">침실</button>
+                    <button class="rounded-pill">베란다</button>
+                </div>
+            </section>
+            <section id="step-2" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q2. 식물을 둘 공간의 빛 환경은 어떤가요?</h3>
+                <div class="answer_btns">
+                    <button class="rounded-pill">직사광선이 내리쬐는 곳</button>
+                    <button class="rounded-pill">밝고 은은한 빛</button>
+                    <button class="rounded-pill">빛이 거의 없는 그늘</button>
+                    <button class="rounded-pill">햇빛이 안 드는 형광등</button>
+                </div>
+            </section>
+            <section id="step-3" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q3. 과거에 식물을 키워본 경험이 있나요?</h3>
+                <div class="answer_btns">
+                    <button class="rounded-pill">식물을 키워본 적이 없어요</button>
+                    <button class="rounded-pill">무난하게 키웠어요</button>
+                    <button class="rounded-pill">매우 잘 키웠어요</button>
+                </div>
+            </section>
+            <section id="step-4" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q4. 식물에 물을 얼마나 자주 줄 수 있나요?</h3>
+                <div class="answer_btns">
+                    <button class="rounded-pill">매일</button>
+                    <button class="rounded-pill">주 3회</button>
+                    <button class="rounded-pill">주 1회</button>
+                    <button class="rounded-pill">월 1회</button>
+                </div>
+            </section>
+            <section id="step-5" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q5. 반려동물이나 아이와 함께 살고 있나요?</h3>
+                <div class="answer_btns">
+                    <button class="rounded-pill">아니오</button>
+                    <button class="rounded-pill">강아지</button>
+                    <button class="rounded-pill">고양이</button>
+                    <button class="rounded-pill">아이</button>
+                    <button class="rounded-pill">그 외 반려동물</button>
+                </div>
+            </section>
+            <section id="step-5" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q6. 무엇을 위해 식물을 찾으시나요?</h3>
+                <div class="answer_btns">
+                    <button class="rounded-pill">공기 정화</button>
+                    <button class="rounded-pill">인테리어</button>
+                    <button class="rounded-pill">정서적 힐링</button>
+                </div>
+            </section>
+            <section id="step-5" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q7. 선호하는 식물의 스타일은 어떤가요?</h3>
+                <div class="answer_btns">
+                    <button class="rounded-pill">묵직한 존재감의 대형 식물</button>
+                    <button class="rounded-pill">분위기를 바꿔줄 중형 식물</button>
+                    <button class="rounded-pill">작은 포인트를 줄 소형 식물</button>
+                </div>
+            </section>
+            <section id="step-5" class="step-container slide-step">
+                <h3 class="mainfont mb-4">Q8. 선호하는 향이 있나요?</h3>
+                <div class="answer_btns">
+                    <button class="rounded-pill">무향</button>
+                    <button class="rounded-pill">싱그러운 허브 향</button>
+                    <button class="rounded-pill">달콤한 꽃 향</button>
+                </div>
+            </section>
+        </div>
+        
+        <div class="d-flex flex-column align-items-end" id="step-contraller">
+            <div class="mt-5 d-flex gap-3">
+                <button class="btn-prev text-white" >
+                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0298271 14.1707C0.0596542 14.0291 0.134216 13.9033 0.27589 13.7853C0.328087 13.7538 0.410107 13.7302 0.521954 13.6988C0.626343 13.6752 0.857498 13.6516 1.2005 13.6358C1.25269 13.6201 1.31234 13.6122 1.36454 13.5808C1.90886 13.3291 2.45319 12.9595 3.01243 12.4718C3.57167 11.9842 4.08616 11.4966 4.55592 11.0011C5.02568 10.5056 5.41342 10.0809 5.71914 9.71907L10.0886 4.55177C11.0207 3.45067 11.7589 2.59339 12.2883 1.98779C12.8177 1.38218 13.2129 0.941741 13.4664 0.658602C13.72 0.383327 13.8915 0.210297 13.9809 0.147377C14.0704 0.0844571 14.145 0.0372671 14.2046 0.0136721C14.3761 -0.0177878 14.5178 0.00580715 14.6371 0.0765921C14.7564 0.147377 14.8757 0.241757 14.995 0.359732L16.1732 1.4687C16.2328 1.52375 16.3074 1.61813 16.4043 1.74397C16.5012 1.86981 16.5087 2.01138 16.4416 2.17655C16.3521 2.32598 16.2477 2.41249 16.1284 2.45182C16.0091 2.49114 15.9196 2.49901 15.86 2.48328C15.6661 2.45182 15.4797 2.48328 15.2933 2.57766C14.734 2.85293 14.1748 3.22259 13.6156 3.69449C13.0563 4.15852 12.5418 4.65402 12.0721 5.16524C11.6023 5.67647 11.222 6.10118 10.9387 6.44724L6.56918 11.6067C5.91301 12.3853 5.35377 13.0381 4.89147 13.5729C5.30903 13.5729 5.74151 13.5729 6.23364 13.5729H28.9909C29.4532 13.5729 30.0124 13.5493 30.6686 13.51C31.3322 13.4707 32.0182 13.392 32.7341 13.2741C33.4499 13.1639 34.0762 12.9752 34.6205 12.7156C34.807 12.6291 34.9561 12.5033 35.0679 12.3303C35.1201 12.2752 35.2022 12.2044 35.314 12.1179C35.4258 12.0314 35.5452 12.0157 35.6794 12.0786C35.8434 12.1336 35.9329 12.2437 35.9627 12.401C35.9925 12.5583 36 12.6763 36 12.7628V14.4302C36 14.6032 35.9851 14.7605 35.9627 14.9021C35.9329 15.0437 35.8583 15.1695 35.7167 15.2875C35.6868 15.3189 35.6197 15.3425 35.5153 15.374C35.4109 15.4055 35.1723 15.4212 34.807 15.4369C34.4416 15.4527 33.86 15.4684 33.0621 15.4762C32.2643 15.492 31.1682 15.4998 29.7589 15.4998H7.00166C6.56918 15.4998 6.0174 15.5156 5.33886 15.5392C4.66031 15.5706 3.97432 15.6493 3.2734 15.7751C2.57249 15.901 1.93869 16.0976 1.372 16.3493C1.18559 16.4358 1.03645 16.5616 0.924606 16.7346C0.894779 16.7897 0.827671 16.8526 0.723282 16.9234C0.618893 16.9942 0.477215 17.0178 0.320629 16.9863C0.156586 16.9313 0.0671082 16.8212 0.037281 16.6639C0.00745392 16.5066 0 16.3886 0 16.3021V14.6347C0 14.4617 0.0149117 14.3044 0.037281 14.1628L0.0298271 14.1707Z" fill="white"/>
+                    </svg>
+                </button>
+                <button class="btn-next text-white">
+                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.9702 14.1707C35.9403 14.0291 35.8658 13.9033 35.7241 13.7853C35.6719 13.7538 35.5899 13.7302 35.478 13.6988C35.3737 13.6752 35.1425 13.6516 34.7995 13.6358C34.7473 13.6201 34.6877 13.6122 34.6355 13.5808C34.0911 13.3291 33.5468 12.9595 32.9876 12.4718C32.4283 11.9842 31.9138 11.4966 31.4441 11.0011C30.9743 10.5056 30.5866 10.0809 30.2809 9.71907L25.9114 4.55177C24.9793 3.45067 24.2411 2.59339 23.7117 1.98779C23.1823 1.38218 22.7871 0.941741 22.5336 0.658602C22.28 0.383327 22.1085 0.210297 22.0191 0.147377C21.9296 0.0844571 21.855 0.0372671 21.7954 0.0136721C21.6239 -0.0177878 21.4822 0.00580715 21.3629 0.0765921C21.2436 0.147377 21.1243 0.241757 21.005 0.359732L19.8268 1.4687C19.7672 1.52375 19.6926 1.61813 19.5957 1.74397C19.4988 1.86981 19.4913 2.01138 19.5584 2.17655C19.6479 2.32598 19.7523 2.41249 19.8716 2.45182C19.9909 2.49114 20.0804 2.49901 20.14 2.48328C20.3339 2.45182 20.5203 2.48328 20.7067 2.57766C21.266 2.85293 21.8252 3.22259 22.3844 3.69449C22.9437 4.15852 23.4582 4.65402 23.9279 5.16524C24.3977 5.67647 24.778 6.10118 25.0613 6.44724L29.4308 11.6067C30.087 12.3853 30.6462 13.0381 31.1085 13.5729C30.691 13.5729 30.2585 13.5729 29.7664 13.5729H7.00911C6.54681 13.5729 5.98757 13.5493 5.3314 13.51C4.66777 13.4707 3.98177 13.392 3.26595 13.2741C2.55012 13.1639 1.92378 12.9752 1.37945 12.7156C1.19304 12.6291 1.04391 12.5033 0.932063 12.3303C0.879867 12.2752 0.797846 12.2044 0.685998 12.1179C0.574151 12.0314 0.454847 12.0157 0.32063 12.0786C0.156587 12.1336 0.0671085 12.2437 0.0372825 12.401C0.0074565 12.5583 0 12.6763 0 12.7628V14.4302C0 14.6032 0.014913 14.7605 0.0372825 14.9021C0.0671085 15.0437 0.141674 15.1695 0.283347 15.2875C0.313173 15.3189 0.380282 15.3425 0.484673 15.374C0.589064 15.4055 0.827672 15.4212 1.19304 15.4369C1.55841 15.4527 2.14002 15.4684 2.93786 15.4762C3.73571 15.492 4.83181 15.4998 6.24109 15.4998H28.9983C29.4308 15.4998 29.9826 15.5156 30.6611 15.5392C31.3397 15.5706 32.0257 15.6493 32.7266 15.7751C33.4275 15.901 34.0613 16.0976 34.628 16.3493C34.8144 16.4358 34.9635 16.5616 35.0754 16.7346C35.1052 16.7897 35.1723 16.8526 35.2767 16.9234C35.3811 16.9942 35.5228 17.0178 35.6794 16.9863C35.8434 16.9313 35.9329 16.8212 35.9627 16.6639C35.9925 16.5066 36 16.3886 36 16.3021V14.6347C36 14.4617 35.9851 14.3044 35.9627 14.1628L35.9702 14.1707Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="scroll_bar border overflow-hidden mt-4">
+                <div class="bg-white" data-width=""></div>
+            </div>
+        </div>
+    </div> 
+
+   
+
+    <section id="step-result" class="d-none">
+        <h2>분석 완료!</h2>
+        <div id="result-display"></div>
+    </section>
+</div>
+
+
+<script>
+
+
+
+let currentStep = 0;
+// DOM 로드 후 전체 스텝 수를 자동으로 계산
+const totalSteps = document.querySelectorAll("#step_quration_wrapper > section").length;
+
+
+// 1. 시작 버튼 클릭
+document.querySelector('#previewinfo .btn-next').addEventListener('click', () => {
+    document.getElementById('previewinfo').style.display = 'none';
+    document.querySelector('.quration_slide_wrapper').classList.remove('d-none');
+    // 초기화 및 프로그레스 바 적용
+    currentStep = 1;
+    updateUI(); 
+    console.log(currentStep,totalSteps )
+});
+
+// 2. 다음/이전 버튼 이벤트
+document.querySelector('.quration_slide_wrapper .btn-next').addEventListener('click', () => {
+    if (currentStep < totalSteps) {
+        currentStep++;
+        updateUI(currentStep);
+    } else {
+        // 마지막 단계 완료 처리
+        showResult();
+    }
+});
+
+document.querySelector('.quration_slide_wrapper .btn-prev').addEventListener('click', () => {
+    if (currentStep > 1) {
+        currentStep--;
+        updateUI(currentStep);
+    }
+});
+
+// 3. UI 통합 업데이트 함수
+function updateUI(currentStep) {
+    // 슬라이드 애니메이션 (translateX)
+    const wrapper = document.getElementById('step_quration_wrapper');
+    wrapper.style.transform = `translateX(-${( currentStep - 1 ) * 100}%)`;
+
+    console.log('나 ui안에 있어',currentStep, typeof(currentStep))
+    // 프로그레스 바 업데이트
+    updateProgressBar(currentStep, totalSteps);
+}
+
+function updateProgressBar(currentStep, totalSteps) {
+    const progress = (currentStep / totalSteps) * 100 + "%";
+    const bar = document.querySelector('.scroll_bar .bg-white');
+    
+    bar.setAttribute('data-width', progress); // 필수 요구사항
+    bar.style.setProperty('--progress', progress); // CSS 연동
+}
+
+function showResult() {
+    // 결과 화면 로직
+    document.body.setAttribute('data-page-id', 'quration_result');
+    // ... 나머지 결과 노출 로직
+}
+
+// 답변 데이터 저장용 객체
+const surveyData = {};
+
+// 답변 버튼 클릭 이벤트
+document.querySelectorAll('.answer_btns button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const currentBtn = e.target;
+        const parent = currentBtn.closest('.answer_btns');
+        
+        // 1. 해당 질문 그룹 내의 모든 버튼에서 is-selected 제거 (하나만 선택 보장)
+        parent.querySelectorAll('button').forEach(b => b.classList.remove('is-selected'));
+        
+        // 2. 클릭한 버튼에 is-selected 추가
+        currentBtn.classList.add('is-selected');
+        
+        // 3. 텍스트 수집 (질문 번호별로 저장)
+        const stepId = currentBtn.closest('.slide-step').id; // 예: "step-1"
+        surveyData[stepId] = currentBtn.innerText.trim();
+        
+        console.log("현재 수집된 데이터:", surveyData);
+    });
+});
+
+
+// 2. 초기 상태 설정 (CSS 혹은 JS로 초기 숨김)
+// HTML의 .quration_slide_wrapper와 #step-contraller에 d-none 클래스를 추가해두세요.
+
+</script>
