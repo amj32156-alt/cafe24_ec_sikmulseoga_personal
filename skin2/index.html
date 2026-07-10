@@ -136,14 +136,20 @@
                         $main_list_reply_view = no
                     -->
                     <li class="{$block_target_class} d-flex flex-column col-3" {$block_data_attr}>
-                        <img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
+						<a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>
+							<img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
+						</a>
+						
 						<div class="text-start text-warning mb-2" style="font-size: 1rem;">★★★★★</div>                   
                         <strong class="title text-start mb-3"><a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>{$subject}</a></strong>
                         <div class="des text-start">{$content}</div>
                     </li>
-                   <li class="{$block_target_class} d-flex flex-column col-3" {$block_data_attr}>
-                        <img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
-						<div class="text-start text-warning mb-2" style="font-size: 1rem;">★★★★★</div>
+                    <li class="{$block_target_class} d-flex flex-column col-3" {$block_data_attr}>
+						<a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>
+							<img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
+						</a>
+						
+						<div class="text-start text-warning mb-2" style="font-size: 1rem;">★★★★★</div>                   
                         <strong class="title text-start mb-3"><a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>{$subject}</a></strong>
                         <div class="des text-start">{$content}</div>
                     </li>

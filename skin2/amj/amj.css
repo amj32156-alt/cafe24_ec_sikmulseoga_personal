@@ -107,6 +107,10 @@ body#amj .main_ft_banner{
     }
 }
 
+#review img{
+    margin-bottom: 20px;
+}
+
 #review .main_title p.more a{
     color: var(--main-color);
 }
@@ -117,6 +121,16 @@ body#amj .main_ft_banner{
     text-overflow: ellipsis;
     display: block;
     color: var(--gray900-color);
+}
+
+#review .des p span {
+    display: -webkit-box;            /* 박스 형태로 표시 */
+    -webkit-line-clamp: 4;           /* 4줄까지만 표시 */
+    -webkit-box-orient: vertical;    /* 세로 방향 정렬 */
+    overflow: hidden;                /* 넘치는 부분 숨김 */
+    text-overflow: ellipsis;         /* 말줄임표(...) 표시 */
+    line-height: 1.5;                /* 줄 간격 (줄 수를 맞추기 위해 필수) */
+    max-height: 6em;                 /* (줄 수 * line-height) 값으로 높이 제한 */
 }
 
 #amj #review .main_title_txt02{
@@ -182,16 +196,18 @@ body#amj .main_ft_banner{
     color: var(--gray600-color);
 }
 
-#amj #cta .mainfont{
-    font-size: 44px !important;
-}
-
-#amj #cta p {
-    font-size: 22px;
-}
-
 #amj #container #contents h2{
-    font-size: 44px !important;
+    font-size: 58px;
+    line-height: 1.2;
+}
+
+#amj #container #contents p{
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+#amj #cta .mainfont{
+    font-size: 44px;
 }
 
 #container #contents p{
