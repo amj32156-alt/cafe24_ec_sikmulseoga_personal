@@ -24,9 +24,9 @@
 		</ez-var>
 	</ez-prop>
 
-	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 온스토리 타이틀 수정하는곳 -->
-		<div class="section_title" data-ez-role="title">Best Sellers</div>
-		<div class="section_sub" data-ez-role="desc">식물 집사들의 베스트셀러</div>
+	<div class="d-flex flex-column justify-content-start justify-content-md-center main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 온스토리 타이틀 수정하는곳 -->
+		<div class="text-start text-md-center section_title" data-ez-role="title">Best Sellers</div>
+		<div class="text-start text-md-center section_sub" data-ez-role="desc">식물 집사들의 베스트셀러</div>
 	</div><!-- //main_title -->
 
     <div class="main_3dan_banner ez-mobile-layout-slide" data-ez-role="ez-mobile-layout" data-ez-mobile-layout="slide"><!-- 메인 3단배너 수정하는곳 -->
@@ -94,7 +94,7 @@
 			   <div class="title d-none">
 					<h2>
 						<span style="display: {$category_title_text_display};">{$category_title_text}</span>
-						<span style="display: {$category_title_img_display};"><img src="{$category_title_img}" alt="{$category_title_text}"></span>
+						<span style="display: {$category_title_img_display};"><img src="{$category_title_img}" alt="{$category_title_text}" /></span>
 					</h2>
 				</div>
 			<!--
@@ -117,37 +117,33 @@
 </section>
 
 <!-- 식물서가의 기록들 -->
-<section id="review" class='section main_title mb-5'>
-    <div class="main_title ez-align-center d-flex align-items-end mb-4 position-relative" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
-		<div class="d-flex flex-column justify-content-center">
-			<p class="section_title text-nowrap" data-ez-role="title">식물서가의 기록들</p>
-			<p class="section_sub text-nowrap" data-ez-role="subtitle">식물서가 이용자들의 후기</p>
+<section id="review" class="section main_title main_image_text_gallery mb-md-5 mb-4" data-ez="contents-1s60dch-1">
+    <div class="main_title ez-align-center d-flex justify-content-start justify-content-md-center align-items-end mb-4 position-relative" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
+		<div class="d-flex flex-column ">
+			<p class="section_title text-nowrap text-start text-md-center" data-ez-role="title">식물서가의 기록들</p>
+			<p class="section_sub text-nowrap text-start text-md-center" data-ez-role="subtitle">식물서가 이용자들의 후기</p>
 		</div>
 		<p class="more position-absolute end-0 bottom-0 m-0 w-auto"><a href="/board/상품-사용후기/4/" class="btnNormal border-0 p-0 h-auto fw500">더보기</a></p>
     </div><!-- //main_title -->
     <div module="board_listpackage_4">
-        <div class="ec-base-table  border-0">
-            <div  summary="">              
-                <ul module="board_list_4" class='row'>
+        <div class="ec-base-table  border-0 ">
+            <div summary class="swiper">              
+                <ul module="board_list_4" class="swiper-wrapper">
                     <!--
                         $count = 4
                         $main_list = yes
                         $subject_cut = 25
                         $main_list_reply_view = no
                     -->
-                    <li class="{$block_target_class} d-flex flex-column col-3" {$block_data_attr}>
-						<a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>
-							<img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
-						</a>
+                    <li class="{$block_target_class} d-flex flex-column swiper-slide" {$block_data_attr}>
+						<a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}><img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"></a>
 						
 						<div class="text-start text-warning mb-2" style="font-size: 1rem;">★★★★★</div>                   
                         <strong class="title text-start mb-3"><a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>{$subject}</a></strong>
                         <div class="des text-start">{$content}</div>
                     </li>
-                    <li class="{$block_target_class} d-flex flex-column col-3" {$block_data_attr}>
-						<a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>
-							<img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"/>
-						</a>
+                    <li class="{$block_target_class} d-flex flex-column swiper-slide" {$block_data_attr}>
+						<a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}><img src="https://ecimg.cafe24img.com/pg3015b10050531030/amjsikmulseoga/file_data{$real_filename}" alt="{$subject}"></a>
 						
 						<div class="text-start text-warning mb-2" style="font-size: 1rem;">★★★★★</div>                   
                         <strong class="title text-start mb-3"><a href="{$link_board_detail}" class="{$block_target_class} text-ellipsis" {$block_data_attr}>{$subject}</a></strong>
@@ -170,46 +166,20 @@
 </section>
 
 <!-- event banner -->
-<section module="Board_ListPackage_8" id="gallery" class="section" data-ez-role="ez-align" data-ez="contents-09cpfxu-1">
+<section module="Board_ListPackage_8" id="gallery" class="section main_image_text_gallery" data-ez-role="ez-align" data-ez="contents-09cpfxu-1">
 
 	<div class="boardList">
 		
-		<ul module="board_notice_8" class="notice ">
-			<!--
-				$count = 2
-				$login_page_url = /member/login.html
-				$deny_access_url = /index.html
-			-->
-			<li >
-				<span>{$checkbox}{$notice_icon}</span>
-				<span class="{$category_display|display}">{$category_name}</span>
-				<span class="subject">
-					{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-				</span>
-			</li>
-			<li >
-				<span>{$checkbox}{$notice_icon}</span>
-				<span class="{$category_display|display}">{$category_name}</span>
-				<span class="subject">
-					{$icon_re} <a href="/board/free/read.html{$param_read}" style="{$link_color}">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
-				</span>
-			</li>
-		</ul>
-			
-		<div class="d-flex gap-md-4 my-5" module="board_list_8">
+		<div class="d-flex flex-column flex-md-row gap-md-4 my-5" module="board_list_8">
 			<!--
 				$login_page_url = /member/login.html
 				$deny_access_url = /index.html
 			-->
-			<div class="pb-5">
-				<a href="/board/free/read.html{$param_read}" class='text-white'>
-					<img src="{$img_src}" alt="{$subject}">
-				</a> 
+			<div>
+				<a href="/board/free/read.html{$param_read}" class="text-white d-block fs-0"><img src="{$img_src}" class="w-100" alt="{$subject}"></a> 
 			</div>
-			<div class="pb-5">
-				<a href="/board/free/read.html{$param_read}" class='text-white'>
-					<img src="{$img_src}" alt="{$subject}">
-				</a> 
+			<div>
+				<a href="/board/free/read.html{$param_read}" class="text-white d-block fs-0"><img src="{$img_src}" class="w-100" alt="{$subject}"></a> 
 			</div>
 			
 		</div>
@@ -229,9 +199,9 @@
 		</ez-var>
 	</ez-prop>
 
-	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
-		<div class="section_title" data-ez-role="title">Sale Item</div>
-		<div class="section_sub" data-ez-role="subtitle">특별할인 세일 상품</div>
+	<div class="d-flex flex-column justify-content-start justify-content-md-center main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
+		<div class="text-start text-md-center section_title" data-ez-role="title">Sale Item</div>
+		<div class="text-start text-md-center section_sub" data-ez-role="subtitle">특별할인 세일 상품</div>
 	</div><!-- //main_title -->
 
 	<div data-ez-holder="product_listmain">
@@ -256,12 +226,12 @@
 </section>
 
 <!-- 식물서가 NEWS -->
-<section module="Board_ListPackage_1" id="news" class="section" data-ez-role="ez-align" data-ez="contents-09cpfxu-1">
+<section module="Board_ListPackage_1" id="news" class="section main_image_text_gallery" data-ez-role="ez-align" data-ez="contents-09cpfxu-1" style="margin-bottom: 120px;">
 
-	<div module="board_title_1" class="d-flex justify-content-center align-items-end mb-4 position-relative">
-		<div class="d-flex flex-column justify-content-center text-center">
+	<div module="board_title_1" class="d-flex justify-content-start justify-content-md-center  align-items-end mb-4 position-relative">
+		<div class="d-flex flex-column justify-content-center text-start text-md-center">
 			<h2 class="section_title">{$board_title} {$board_adult_icon}</h2>
-			<p class="section_sub mb-3">{$board_info}</p>
+			<p class="section_sub">{$board_info}</p>
 		</div>
 		<p class="more position-absolute end-0 bottom-0 m-0 w-auto"><a href="/board/식물서가-News/1/" class="btnNormal border-0 p-0 h-auto fw500">더보기</a></p>
 	</div>
@@ -327,25 +297,25 @@
 					$login_page_url = /member/login.html
 					$deny_access_url = /index.html
 				-->
-				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
+				<div class="d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4">
 					
 					<span class="{$category_display|display}">{$category_name}</span>
 					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+						{$icon_re} <a href="/board/free/read.html{$param_read}" class="text-white">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
 					</span>
 				</div>
-				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
+				<div class="d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4">
 					
 					<span class="{$category_display|display}">{$category_name}</span>
 					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+						{$icon_re} <a href="/board/free/read.html{$param_read}" class="text-white">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
 					</span>
 				</div>
-				<div class='d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4'>
+				<div class="d-flex justify-content-end text-white flex-column pb-3 ps-3 pe-3 pb-lg-4 ps-lg-4">
 					
 					<span class="{$category_display|display}">{$category_name}</span>
 					<span class="subject">
-						{$icon_re} <a href="/board/free/read.html{$param_read}" class='text-white'>{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
+						{$icon_re} <a href="/board/free/read.html{$param_read}" class="text-white">{$subject}</a> {$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="comment">{$comment_count}</span>
 					</span>
 				</div>
 			</div>
@@ -371,9 +341,9 @@
 		</ez-var>
 	</ez-prop>
 	<div class="main_product_inner">
-		<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 베스트셀러 수정하는곳 -->
-			<div class="section_title" data-ez-role="title">초보집사 PICK!</div>
-			<div class="section_sub" data-ez-role="subtitle">식물서가의 초보집사들이 선택한 식물</div>
+		<div class="d-flex flex-column justify-content-start justify-content-md-center main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 베스트셀러 수정하는곳 -->
+			<div class="text-start text-md-center section_title" data-ez-role="title">초보집사 PICK!</div>
+			<div class="text-start text-md-center section_sub" data-ez-role="subtitle">식물서가의 초보집사들이 선택한 식물</div>
 		</div><!-- //main_title -->
 
 		<ul class="main_product_tab d-none" data-ez-role="tab-list">
@@ -387,7 +357,7 @@
 	<div class="content_list" data-ez-role="content-list">
 		<div class="tabcontent" id="tabContent1" data-ez-role="content-item">
 			<div data-ez-holder="product_listmain">
-				<div module="product_listmain_2" class="ec-base-product">
+				<div module="product_listmain_2" class="ec-base-product swiper">
 					<!--
 						$count = 100
 						$basket_result = /product/add_basket.html
@@ -395,8 +365,8 @@
 						$moreview = yes
 						$cache = yes
 					-->
-					<ul class="prdList grid3" data-ez-role="layout ez-discount-tag">
-						<!--@import(/product/list_product.html)-->
+					<ul class="prdList swiper-wrapper" data-ez-role="layout ez-discount-tag">
+						<!--@import(/product/list_product_slide.html)-->
 					</ul>
 				</div>
 				<div module="product_listmore_2" class="more">
@@ -484,8 +454,4 @@
 </section>
 
 <!--@define(cmc_log)-->
-
-
-
-
 <!--#ez="1/10"-->

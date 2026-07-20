@@ -96,9 +96,20 @@ body#amj .main_ft_banner{
     top: 24px;
 }
 
-#new,#pick .prdList .sale_box{
+#anchorBoxId_180 > div > div.thumbnail > div.sale_box,
+#anchorBoxId_203 > div > div.thumbnail > div.sale_box,
+#anchorBoxId_212 > div > div.thumbnail > div.sale_box,
+#anchorBoxId_194 > div > div.thumbnail > div.sale_box,
+#anchorBoxId_176 > div > div.thumbnail > div.sale_box,
+#anchorBoxId_177 > div > div.thumbnail > div.sale_box,
+#anchorBoxId_185 > div > div.thumbnail > div.sale_box{
     display: none;
-}
+} 
+
+
+/* #new,#pick .prdList .sale_box{
+    display: none;
+} */
 
 #news .boardList .xans-board-list-1 > div{
   float:right;
@@ -289,7 +300,7 @@ body#amj .main_ft_banner{
    body#amj #news .boardList .xans-board-list-1 > div {
         float: none;
         width: auto;
-        margin-top: clamp(8px, 3vw, 20px);
+        margin-top: clamp(8px, 1.5vw, 20px);
     }
     body#amj #news .boardList .xans-board-list-1 > div:nth-child(1) {
         aspect-ratio: 603 / 265;
@@ -330,4 +341,40 @@ body#amj #sale .xans-product-listmain-4 .prdList__item .thumbnail .description >
     line-height: 1;
     color: #2a2a2a !important;
     letter-spacing: -0.03em;
+}
+
+#contents > section.section.main_image_text_gallery > div.main_3dan_banner.ez-mobile-layout-slide > ul > li > a > div > div.main_banner_txt01{
+    font-size: clamp(16px, 0.4vw + 14px, 20px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--gray900-color);
+}
+
+#contents > section.section.main_image_text_gallery > div.main_3dan_banner.ez-mobile-layout-slide > ul > li > a > div > div.main_banner_more{
+    font-size: clamp(14px, 0.4vw + 12.8px, 16px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--gray300-color);
+}
+
+#contents > section.section.main_image_text_gallery > div.main_3dan_banner.ez-mobile-layout-slide > ul > li > a > div{
+    margin-top: clamp(16px, 0.8vw + 12.8px, 24px);
+}
+
+#contents .boardList ul li a span strong.subject strong{
+    color: var(--gray900-color);
+}
+
+#contents .boardList ul li a span strong.subject p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--gray300-color);
+}
+
+#gallery div div{
+    gap: clamp(8px, 2vw, 24px);
 }

@@ -1,164 +1,178 @@
 <div class="swiper" id="heroSection" data-ez="module-12i6s7i-1">
 	<div webpb-banner-code="i0ak" hidden class="swiper-wrapper">
     	<div webpb-banner class="swiper-slide dim" style="background-image:url({#pc_thumb_url})">
-        <div class="hero-container d-flex flex-column justify-content-center mx-auto w-100 h-100">
-        	  <div href="{#link}" class="d-md-none h-100 d-flex flex-column justify-content-center align-items-center text-center dim" target="{#link_target}" style="background-image:url({#m_thumb_url})">
-                    <div class="textcontent position-relative">
-                      {#html}
-                     </div>
-                     <span class="hero_line d-block bg-white bar px-1 py-4"></span>                     
-            		    <a class="hero-more font-white mainfont" href="{#link}" target="{#link_target}">MORE</a>
-             </div>
-            <div href="{#link}" class="d-none d-md-flex justify-content-between align-items-end mt-auto pb-5" target="{#link_target}">
-                    <div class="textcontent pb-5">
-                    {#html}
-                     </div>
-            		<a class="hero-more font-white mainfont pb-5" href="{#link}" target="{#link_target}">MORE</a>
-             </div>
-        </div>
+            <div class="hero-container d-flex flex-column justify-content-center mx-auto w-100 h-100">
+                  <div href="{#link}" class="d-md-none h-100 d-flex gap-5 flex-column justify-content-center align-items-center text-center dim" target="{#link_target}" style="background-image:url({#m_thumb_url})">
+                        <div class="textcontent position-relative">
+                          {#html}
+                         </div>
+                         <span class="hero_line d-block bg-white bar position-relative zup"></span>                     
+                         <a class="hero-more font-white mainfont  position-relative zup" href="{#link}" target="{#link_target}">MORE</a>
+                 </div>
+                <div href="{#link}" class="d-none d-md-flex justify-content-between align-items-end mt-auto pb-5" target="{#link_target}">
+                        <div class="textcontent pb-5">
+                        {#html}
+                         </div>
+                        <a class="hero-more font-white mainfont pb-5" href="{#link}" target="{#link_target}">MORE</a>
+                 </div>
+            </div>
     	</div>
     	<div webpb-banner class="swiper-slide dim" style="background-image:url({#pc_thumb_url})">
-        <div class="hero-container d-flex flex-column justify-content-center mx-auto w-100 h-100">
-        	  <div href="{#link}" class="d-md-none h-100 d-flex flex-column justify-content-center align-items-center text-center dim" target="{#link_target}" style="background-image:url({#m_thumb_url})">
-                    <div class="textcontent  position-relative">
-                      {#html}
-                     </div>
-                     <span class="d-block bg-white bar px-1 py-4"></span>                     
-            		    <a class="hero-more font-white mainfont" href="{#link}" target="{#link_target}">MORE</a>
-             </div>
-            <div href="{#link}" class="d-none d-md-flex justify-content-between align-items-end mt-auto pb-5" target="{#link_target}">
-                    <div class="textcontent pb-5">
-                    {#html}
-                     </div>
-            		<a class="hero-more font-white mainfont pb-5" href="{#link}" target="{#link_target}">MORE</a>
-             </div>
-        </div>
+           <div class="hero-container d-flex flex-column justify-content-center mx-auto w-100 h-100">
+                  <div href="{#link}" class="d-md-none h-100 d-flex gap-5 flex-column justify-content-center align-items-center text-center dim" target="{#link_target}" style="background-image:url({#m_thumb_url})">
+                        <div class="textcontent position-relative">
+                          {#html}
+                         </div>
+                         <span class="hero_line d-block bg-white bar position-relative zup"></span>                     
+                         <a class="hero-more font-white mainfont  position-relative zup" href="{#link}" target="{#link_target}">MORE</a>
+                 </div>
+                <div href="{#link}" class="d-none d-md-flex justify-content-between align-items-end mt-auto pb-5" target="{#link_target}">
+                        <div class="textcontent pb-5">
+                        {#html}
+                         </div>
+                        <a class="hero-more font-white mainfont pb-5" href="{#link}" target="{#link_target}">MORE</a>
+                 </div>
+            </div>
     	</div>
 	</div>
     <div class="swiper-pagination"></div>
 </div>
 <div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1i1nl2v-1" style="margin-bottom: 150px;">
   
-  <style>
-    #heroSection .swiper-slide .textcontent {
-      z-index: 10;
-    }
+<style>
+#heroSection .swiper-slide .textcontent {
+  z-index: 10;
+}
+
+.zup{
+  z-index: 100;
+}
   
-    #heroSection .swiper-slide .textcontent  .mainfont{ opacity: 0; transform: translateY(-150%); transition: 0.5s; transition-delay: 0.3s;}
-    #heroSection .swiper-slide .textcontent  p.hero-sub-f{ opacity: 0; transition: 0.5s; transition-delay: 0.6s; transform: translateY(150%);}
-    #heroSection .swiper-slide a.hero-more{ opacity: 0; transition: 0.5s; transition-delay: 0.7s; transform: translateY(150%);}
+#heroSection .swiper-slide .textcontent .mainfont{
+  opacity: 0;
+  transform: translateY(150%);
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+      
+#heroSection .swiper-slide .textcontent p.hero-sub-f{
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay:
+  0.6s; transform:
+  translateY(150%);
+}
+      
+#heroSection .swiper-slide a.hero-more{
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.9s;
+  transform: translateY(150%);
+}
+
+
+#heroSection .swiper-slide   .hero_line{
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.6s;
+  transform: translateY(150%);
+}
     
 
-    #heroSection .swiper-slide.swiper-slide-active .textcontent  .mainfont{ 
-      transform: translateY(0);
-      opacity: 1;
-    }
-    #heroSection .swiper-slide.swiper-slide-active .textcontent  p.hero-sub-f{ 
-      transform: translateY(0);
-      opacity: 1;}
-      #heroSection .swiper-slide.swiper-slide-active a.hero-more{ 
-      transform: translateY(0);
-      opacity: 1;}
+#heroSection .swiper-slide.swiper-slide-active .textcontent  .mainfont,
+#heroSection .swiper-slide.swiper-slide-active .textcontent  p.hero-sub-f,
+#heroSection .swiper-slide.swiper-slide-active a.hero-more,
+#heroSection .swiper-slide.swiper-slide-active   .hero_line{ 
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
 
-    /* 1. 배경 이미지를 가진 슬라이드: 배경은 꽉 차게 */
-    #heroSection .swiper-slide {
-       
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* 슬라이드 자체에는 패딩을 주지 않습니다 */
-    }
+/* 1. 배경 이미지를 가진 슬라이드: 배경은 꽉 차게 */
+#heroSection .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    /* 2. 글자/버튼을 담는 컨테이너: 여기에 패딩과 정렬 적용 */
-    .hero-container {
-        
-        max-width: 1600px;      
-        box-sizing: border-box;     
-     
-  
-    }
+/* 2. 글자/버튼을 담는 컨테이너: 여기에 패딩과 정렬 적용 */
+.hero-container {
+    max-width: 1600px;      
+    box-sizing: border-box;     
+}
 
-    
-    
+.hero_line{
+  width:1px;
+  height:56px;
+}
+   
 /* 딤 처리 */
 #heroSection .swiper-slide {
-    position: relative;
+  position: relative;
 }
+
 .dim{
   position:  relative !important;
 }
+
 .dim::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* 0.4가 딤 농도입니다 */
-    z-index: 1;
-    pointer-events: none; /* 클릭 방해 금지 */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 0.4가 딤 농도입니다 */
+  z-index: 1;
+  pointer-events: none; /* 클릭 방해 금지 */
 }
 
 /* 내부 콘텐츠(글자)가 딤 뒤로 숨지 않게 z-index 조정 */
 #heroSection .swiper-slide > div {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
+.hero-sub-f {
+  display: block;
+  font-size: clamp(18px, 2.5vw + 10px, 24px);
+  color: #fff;
+  margin-top: 40px !important;
+}
 
-    
-    
-    
-    .hero-sub-f {
-        display: block;
-        font-size: clamp(18px, 2.5vw + 10px, 24px);
-        color: #fff;
-        margin-top: 40px !important;
-        }
+.mainfont {
+  font-size: clamp(27px, 3.5vw + 15px, 52px);
+  color: #fff;
+}
 
-    .mainfont {
-        font-size: clamp(27px, 3.5vw + 15px, 52px);
-        color: #fff;
-    }
-    .hero-more{
-        font-size: clamp(24px, 3.5vw, 28px);
-    }
+.hero-more{
+  font-size: clamp(24px, 3.5vw, 28px);
+}
 
-    @media (max-width: 768px) {
-        .hero-sub-f {
-            margin-top: 20px !important;
-        }
-    }
+@media (max-width: 768px) {
+  .hero-sub-f {
+    margin-top: 20px !important;
+  }
+}
     
-    
-     #heroSection .swiper-slide{      
-       aspect-ratio: 1920 / 765;
-        background-size: cover;
-   	 	background-position: center;
-    	background-repeat: no-repeat;
-       
-    }
+#heroSection .swiper-slide{      
+  aspect-ratio: 1920 / 765;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
    
-    
-    @media (max-width:991px){
-        #heroSection .swiper-slide{
-            aspect-ratio: 375 / 500;
-            background :none !important
-        }
-    	#heroSection .swiper-slide > div{
-          
-            background-size: cover;
-            background-repeat: no-repeat;
-       
-          
-          
-        }
-      
-    }
-    
-    
+@media (max-width:991px){
+  #heroSection .swiper-slide{
+    aspect-ratio: 375 / 500;
+    background :none !important
+  }
+  #heroSection .swiper-slide > div{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}   
 </style>
 
 <script>
@@ -214,6 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 </script>
+
 </div>
 <div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-0x94jkb-1"></div>
 <!--#ez="1/4"-->

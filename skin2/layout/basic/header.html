@@ -1,0 +1,91 @@
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-0y26e0i-1"><style>
+    .zup{
+      z-index: 100 !important;
+    }
+    </style></div>
+<div class="main_top_banner ez-align-left contentbox main-bg-color text-white" data-ez-module="top-banner" data-ez-align="left" data-ez-role="style.color" data-ez-display="visible" data-ez="contents-1uenqh6-1">
+	<div class="top_banner_box_inner gap-lg-0 gap-1 py-2 py-lg-1 justify-content-center justify-contnet-lg-between">
+		<div class="top_banner_text text-center text-lg-start"><!-- 최상단 배너 수정하는곳 -->
+			<a data-ez-role="a" href="#" data-href="#" target="_self" class="text-white fw300">첫 쇼핑을 지원하는 3,000원 할인 회원가입 쿠폰</a>
+		</div><!-- //top_banner_text -->
+
+		<div class="top_banner_close ms-0 pt-0" data-ez-role="close">
+			<input type="checkbox" name="chkbox" id="top_banner_box_cloase" value="1" data-ez-role="disable-term"><label class="text-white" for="top_banner_box_cloase" data-ez-role="disable-text">오늘 하루 보지 않기</label>
+			<i aria-hidden="true" class="icon icoClose">닫기</i>
+		</div><!-- //top_banner_close -->
+	</div><!-- //top_banner_box_inner -->
+</div>
+<header id="header" class="layout3" data-ez-layout="layout3" data-ez="contents-1kbhajm-1">
+	<ez-prop data-version="1.0.0" type="layout">
+		<ez-var data-prop="layout" data-namespace="ez.layout.header.layout" data-type="array">
+			<ez-item data-id="layout3" data-name="1단 기본형"></ez-item>
+			<ez-item data-id="layout2" data-name="2단 좌측형"></ez-item>
+			<ez-item data-id="layout4" data-name="2단 혼합형"></ez-item>
+			<ez-item data-id="layout1" data-name="2단 중앙형 (아이콘 하단)"></ez-item>
+			<ez-item data-id="layout5" data-name="2단 중앙형 (아이콘 상단)"></ez-item>
+			<ez-item data-id="layout6" data-name="2단 슬라이딩 메뉴 노출형"></ez-item>
+  	    </ez-var>
+	</ez-prop>
+	<div class="inner contentbox">
+		<div class="toparea display_pc_only">
+			<div class="toparea_shoppinginfo d-none">
+				<div module="Layout_multishopList">
+					<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
+					<ul module="Layout_multishopListitem">
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+					</ul>
+				</div>
+                <div data-ez-group="shopping-info" data-ez-role="list">
+				<ul module="Layout_shoppingInfo">
+					<li class="{$use_mileage|display}"><a href="/myshop/mileage/historyList.html">{$mileage_name} <strong>{$mileage}</strong></a></li>
+					<li class="{$use_deposit|display}"><a href="/myshop/deposits/historyList.html">{$deposit_name} <strong>{$deposit}</strong></a></li>
+					<li class="{$use_coupon_cnt|display}"><a href="/myshop/coupon/coupon.html">쿠폰 <strong>{$coupon_cnt}</strong></a></li>
+					<li class="{$use_interest_prd|display}"><a href="/myshop/wish_list.html">관심상품 <strong>{$interest_prd_cnt}</strong></a></li>
+					<li class="{$use_like_product_cnt|display}">{$like_prd_tag}</li>
+					<li class="{$use_basket_cnt|display}"><a href="/order/basket.html">장바구니 <strong>{$basket_cnt}<span class="{$use_basket_price|display}">({$basket_price})</span></strong></a></li>
+				</ul>
+                </div>
+			</div><!-- //toparea_shoppinginfo -->
+
+			<div class="toparea_state ms-auto" data-ez-group="top-util-menu" data-ez-role="list">
+				<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+				<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+				<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+				<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+				<a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+				<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+				<a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+				<div class="toparea_state_board">
+					<a data-ez-item="board" href="#none">고객센터 <i aria-hidden="true" class="icon icoArrowBottom"></i></a>
+					<ul module="Layout_BoardInfo">
+						<li><a href="{$link_board_list}">{$board_name}</a></li>
+						<li><a href="{$link_board_list}">{$board_name}</a></li>
+					</ul>
+				</div>
+			</div><!-- //toparea_state -->
+		</div><!-- //toparea -->
+
+		<div class="top_nav_box bg-transparent align-items-center" id="top_nav_box">
+			<div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}" loading="lazy" ez-prevent="img"></a></div><!-- //top_logo -->
+			<div class="top_nav"><a href="javascript:;" class="eNavFold"><i aria-hidden="true" class="icon icoNav"></i></a></div>
+
+			<div data-ez-module="menu-main/1" data-ez-mode="manual">
+        <div class="xans-element- xans-layout xans-layout-category top_category">
+<ul><li><a href="/category/All/42/">Shop</a><ul class="sub_cate01"><li><a href="/category/%EC%8B%9D%EB%AC%BC/48/">식물</a><ul class="sub_cate02"><li><a href="/category/%EA%B3%B5%EA%B0%84%EB%B3%84/54/">공간별</a><ul class="sub_cate03"><li><a href="/category/%EC%9A%95%EC%8B%A4/71/">욕실</a></li><li><a href="/category/%EA%B1%B0%EC%8B%A4/72/">거실</a></li><li><a href="/category/%EC%B9%A8%EC%8B%A4/73/">침실</a></li><li><a href="/category/%EB%B2%A0%EB%9E%80%EB%8B%A4/76/">베란다</a></li></ul></li><li><a href="/category/%EA%B4%80%EB%A6%AC-%EB%82%9C%EC%9D%B4%EB%8F%84%EB%B3%84/55/">관리 난이도별</a><ul class="sub_cate03"><li><a href="/category/%EC%89%AC%EC%9B%80/74/">쉬움</a></li><li><a href="/category/%EC%96%B4%EB%A0%A4%EC%9B%80/75/">어려움</a></li></ul></li><li><a href="/category/Pet-Friendly/77/">Pet-Friendly</a></li></ul></li><li><a href="/category/%EA%B0%80%EB%93%9C%EB%8B%9D-%EC%9A%A9%ED%92%88/49/">가드닝 용품</a></li></ul></li><li><a href="/amj/page/quration.html">맞춤 식물</a></li><li><a href="/amj/page/guide.html">식물 가이드</a></li><li><a href="/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">Community</a><ul class="sub_cate01"><li><a href="/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">후기</a></li><li><a href="/category/%EC%8B%9D%EB%AC%BC-%EC%83%81%EB%8B%B4%EC%8B%A4/69/">식물 상담실</a></li><li><a href="/board/%EC%8B%9D%EB%AC%BC%EC%84%9C%EA%B0%80-News/1/">공지사항</a></li></ul></li><li><a href="/board/%EA%B0%A4%EB%9F%AC%EB%A6%AC/8/">Event</a></li></ul>
+</div>
+      </div><!-- //menu-main/1 -->
+
+			<div class="top_mypage">
+				<a href="javascript:;" class="eSearch"><!--@import(/svg/icon-search.html)--></a>
+				<a href="/myshop/index.html"><!--@import(/svg/icon-user.html)--></a>
+				<a href="/order/basket.html" module="Layout_orderBasketcount"><!--@import(/svg/icon-cart.html)--><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+			</div><!-- //top_mypage -->
+		</div><!-- //top_nav_box -->
+	</div><!-- //inner -->
+</header>
+<!--#ez="1/2"-->
