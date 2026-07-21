@@ -100,7 +100,7 @@ body#amj .main_ft_banner{
 #anchorBoxId_203 > div > div.thumbnail > div.sale_box,
 #anchorBoxId_212 > div > div.thumbnail > div.sale_box,
 #anchorBoxId_194 > div > div.thumbnail > div.sale_box,
-#anchorBoxId_176 > div > div.thumbnail > div.sale_box,
+#pick #anchorBoxId_176 > div > div.thumbnail > div.sale_box,
 #anchorBoxId_177 > div > div.thumbnail > div.sale_box,
 #anchorBoxId_185 > div > div.thumbnail > div.sale_box{
     display: none;
@@ -377,4 +377,40 @@ body#amj #sale .xans-product-listmain-4 .prdList__item .thumbnail .description >
 
 #gallery div div{
     gap: clamp(8px, 2vw, 24px);
+}
+
+#amj #event > div{
+    margin-top: clamp(0px, 10vw, 160px);
+    margin-bottom: clamp(80px, 12vw, 200px);
+}
+
+body#amj #news{
+    margin-top: clamp(48px, 8vw, 120px) !important;
+    margin-bottom: clamp(80px, 12vw, 200px) !important;
+}
+
+body#amj #event > div > div{
+     gap: 1.5rem !important;
+}
+
+@media (max-width: 991px) {
+    body#amj #event > div > div {
+        gap: 1rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    body#amj #event > div > div {
+        gap: 0 !important;
+    }
+}
+
+#pick .ec-base-product .prdList{
+    margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #pick .ec-base-product .prdList{
+        margin: 0;
+    }
 }
