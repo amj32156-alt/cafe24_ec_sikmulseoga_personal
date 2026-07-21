@@ -87,6 +87,10 @@ body#amj .main_ft_banner{
     width:auto;
 }
 
+#header .top_mypage{
+    margin-top: 14px;
+}
+
 #header .top_mypage span.EC-Layout-Basket-count{
     color: #fff;
     font-size: 12px;
@@ -145,6 +149,9 @@ body#amj .main_ft_banner{
     #amj #header.layout3 .inner .top_nav_box .top_mypage a.xans-layout-orderbasketcount .count {
     top: 40px;
     }
+    #header .top_mypage{
+    margin-top: 0;
+}
 }
 
 #review img{
@@ -413,4 +420,14 @@ body#amj #event > div > div{
     #pick .ec-base-product .prdList{
         margin: 0;
     }
+}
+
+#wrap > div.bottom-nav.RMB.RTB > ul > li.xans-element-.xans-layout.xans-layout-statelogon > a > span{
+    background: var(--main-color);
+}
+
+#wrap > div.bottom-nav.RMB.RTB > ul > li.xans-element-.xans-layout.xans-layout-statelogon > a > span > span{
+    font-size: 11px;
+    color: white;
+    letter-spacing: -0.03em;
 }
