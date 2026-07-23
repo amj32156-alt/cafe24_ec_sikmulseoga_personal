@@ -431,3 +431,36 @@ body#amj #event > div > div{
     color: white;
     letter-spacing: -0.03em;
 }
+
+#actionBuy{
+    line-height: 1;
+    color: white;
+}
+
+#amj [class^='btnSubmit'], a[class^='btnSubmit'] {
+    background: var(--main-color);
+}
+
+#contents > div.xans-element-.xans-product.xans-product-detail.section > div.detailArea > div.infoArea > div.guideArea > p > span{
+    font-size: 13px;
+    color: var(--gray300-color);
+}
+
+@media (max-width: 1024px) {
+    #contents > div.xans-element-.xans-product.xans-product-detail.section > div.detailArea > div.infoArea > div.guideArea > p > span{
+        font-size: 16px;
+    }
+}
+
+#contents > div.xans-element-.xans-product.xans-product-detail.section > div.detailArea > div.infoArea > div.xans-element-.xans-product.xans-product-detaildesign > table > tbody > tr:nth-child(7) > td > span > span{
+    font-size: 12px;
+}
+
+#amj #span_product_price_custom > strike{
+    font-size: 12px;
+}
+
+#amj [class^='btnNormal'], a[class^='btnNormal'] {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
