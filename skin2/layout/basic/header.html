@@ -76,7 +76,7 @@
 
 			<div data-ez-module="menu-main/1" data-ez-mode="manual">
         <div class="xans-element- xans-layout xans-layout-category top_category">
-<ul><li><a href="/category/All/42/">Shop</a><ul class="sub_cate01"><li><a href="/category/%EC%8B%9D%EB%AC%BC/48/">식물</a><ul class="sub_cate02"><li><a href="/category/%EA%B3%B5%EA%B0%84%EB%B3%84/54/">공간별</a><ul class="sub_cate03"><li><a href="/category/%EC%9A%95%EC%8B%A4/71/">욕실</a></li><li><a href="/category/%EA%B1%B0%EC%8B%A4/72/">거실</a></li><li><a href="/category/%EC%B9%A8%EC%8B%A4/73/">침실</a></li><li><a href="/category/%EB%B2%A0%EB%9E%80%EB%8B%A4/76/">베란다</a></li></ul></li><li><a href="/category/%EA%B4%80%EB%A6%AC-%EB%82%9C%EC%9D%B4%EB%8F%84%EB%B3%84/55/">관리 난이도별</a><ul class="sub_cate03"><li><a href="/category/%EC%89%AC%EC%9B%80/74/">쉬움</a></li><li><a href="/category/%EC%96%B4%EB%A0%A4%EC%9B%80/75/">어려움</a></li></ul></li><li><a href="/category/Pet-Friendly/77/">Pet-Friendly</a></li></ul></li><li><a href="/category/%EA%B0%80%EB%93%9C%EB%8B%9D-%EC%9A%A9%ED%92%88/49/">가드닝 용품</a></li></ul></li><li><a href="/amj/page/quration.html">맞춤 식물</a></li><li><a href="/amj/page/guide.html">식물 가이드</a></li><li><a href="/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">Community</a><ul class="sub_cate01"><li><a href="/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">후기</a></li><li><a href="/category/%EC%8B%9D%EB%AC%BC-%EC%83%81%EB%8B%B4%EC%8B%A4/69/">식물 상담실</a></li><li><a href="/board/%EC%8B%9D%EB%AC%BC%EC%84%9C%EA%B0%80-News/1/">공지사항</a></li></ul></li><li><a href="/board/%EA%B0%A4%EB%9F%AC%EB%A6%AC/8/">Event</a></li></ul>
+<ul><li><a href="/category/All/42/">Shop</a><ul class="sub_cate01"><li><a href="/category/%EC%8B%9D%EB%AC%BC/48/">식물</a><ul class="sub_cate02"><li><a href="/category/%EA%B3%B5%EA%B0%84%EB%B3%84/54/">공간별</a><ul class="sub_cate03"><li><a href="/category/%EC%9A%95%EC%8B%A4/71/">욕실</a></li><li><a href="/category/%EA%B1%B0%EC%8B%A4/72/">거실</a></li><li><a href="/category/%EC%B9%A8%EC%8B%A4/73/">침실</a></li><li><a href="/category/%EB%B2%A0%EB%9E%80%EB%8B%A4/76/">베란다</a></li></ul></li><li><a href="/category/%EA%B4%80%EB%A6%AC-%EB%82%9C%EC%9D%B4%EB%8F%84%EB%B3%84/55/">관리 난이도별</a><ul class="sub_cate03"><li><a href="/category/%EC%89%AC%EC%9B%80/74/">쉬움</a></li><li><a href="/category/%EC%96%B4%EB%A0%A4%EC%9B%80/75/">어려움</a></li></ul></li><li><a href="/category/Pet-Friendly/77/">Pet-Friendly</a></li></ul></li><li><a href="/category/%EA%B0%80%EB%93%9C%EB%8B%9D-%EC%9A%A9%ED%92%88/49/">가드닝 용품</a></li></ul></li><li><a href="/amj/page/quration.html"  id="fixmysikmulseoga">맞춤 식물</a></li><li><a href="/amj/page/guide.html">식물 가이드</a></li><li><a href="/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">Community</a><ul class="sub_cate01"><li><a href="/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/" id="reviewsikmulseoga">후기</a></li><li><a href="/category/%EC%8B%9D%EB%AC%BC-%EC%83%81%EB%8B%B4%EC%8B%A4/69/">식물 상담실</a></li><li><a href="/board/%EC%8B%9D%EB%AC%BC%EC%84%9C%EA%B0%80-News/1/">공지사항</a></li></ul></li><li><a href="/board/%EA%B0%A4%EB%9F%AC%EB%A6%AC/8/">Event</a></li></ul>
 </div>
       </div><!-- //menu-main/1 -->
 
@@ -89,3 +89,38 @@
 	</div><!-- //inner -->
 </header>
 <!--#ez="1/2"-->
+<script>
+
+document.getElementById('fixmysikmulseoga').addEventListener('click', function(e) {
+    // 1) 링크가 원래 하려던 페이지 이동을 잠깐 멈춤
+    e.preventDefault();
+    
+    var targetUrl = this.href; // 이동할 주소를 미리 저장해둠
+
+    // 2) 네이버 애널리틱스 이벤트 수집
+    if (typeof wcs !== 'undefined') {
+        wcs.event("lead", "맞춤식물");
+    }
+
+    // 3) 신호를 보낸 후, 저장해 둔 주소로 안전하게 페이지 이동 시킴 (0.2초 뒤)
+    setTimeout(function() {
+        window.location.href = targetUrl;
+    }, 200);
+});
+document.getElementById('reviewsikmulseoga').addEventListener('click', function(e) {
+    // 1) 링크가 원래 하려던 페이지 이동을 잠깐 멈춤
+    e.preventDefault();
+    
+    var targetUrl = this.href; // 이동할 주소를 미리 저장해둠
+
+    // 2) 네이버 애널리틱스 이벤트 수집
+    if (typeof wcs !== 'undefined') {
+        wcs.event("lead", "후기");
+    }
+
+    // 3) 신호를 보낸 후, 저장해 둔 주소로 안전하게 페이지 이동 시킴 (0.2초 뒤)
+    setTimeout(function() {
+        window.location.href = targetUrl;
+    }, 200);
+});
+</script>
